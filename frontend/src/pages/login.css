@@ -1,0 +1,112 @@
+.student-login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #edf9f1 0%, #f5f0ff 100%);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  padding: 1rem;
+}
+
+.login-card {
+  width: min(420px, 100%);
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.15);
+  border: 1px solid #e9f1ff;
+  padding: 1.3rem 1.4rem;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #1f2a35;
+  letter-spacing: -0.02em;
+}
+
+.login-header p {
+  margin: 0.45rem 0 1.2rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.login-form {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.login-form label {
+  color: #2f3d4f;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.login-form input {
+  width: 100%;
+  border: 1px solid #d9e8de;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0.65rem 0.75rem;
+  font-size: 0.95rem;
+  color: #111827;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.login-form input:focus {
+  border-color: #7c3aed;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.login-btn {
+  margin-top: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #16a34a, #7c3aed);
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.62rem 0.9rem;
+  cursor: pointer;
+  transition: filter 0.2s ease, transform 0.15s ease;
+}
+
+.login-btn:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.alt-actions {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.alt-actions a {
+  color: #6d28d9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.alt-actions a:hover {
+  text-decoration: underline;
+}
+
+.alt-actions p {
+  margin: 0;
+  color: #374151;
+}
+
+@media (max-width: 500px) {
+  .login-card {
+    padding: 1rem;
+  }
+
+  .login-header h2 {
+    font-size: 1.4rem;
+  }
+}

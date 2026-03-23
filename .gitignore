@@ -1,0 +1,8 @@
+.env
+node_modules
+notes
+Backend/*.log
+Backend/*.err
+frontend/*.log
+frontend/*.err
+frontend/preview-home.png

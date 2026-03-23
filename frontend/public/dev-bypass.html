@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ExamAttempt Demo</title>
+    <script src="/src/main.jsx" type="module"></script>
+    <script>
+      // Auth bypass for dev
+    localStorage.setItem('token','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHVkZW50Ijp0cnVlfQ.fake');
+    localStorage.setItem('role', 'student');
+    </script>
+    <style>
+        body { margin: 0; font-family: system-ui; }
+        a { position: absolute; top: 10px; right: 10px; color: white; background: #007bff; padding: 10px; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <a href="/exam/testexam1">Go to Exam</a>
+<script type="module">
+        import React from '/src/main.jsx';
+        React.startTransition(() => {
+            // Dev bypass auth
+            localStorage.setItem('token','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHVkZW50Ijp0cnVlfQ.fake');
+            localStorage.setItem('role', 'student');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.question-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.dash-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.dash-btn.not-answered {
+  background-color: #6b46c1; /* violet for unattempted */
+}
+
+.dash-btn.answered {
+  background-color: #16a34a; /* green for answered */
+}
+
+.dash-btn.current {
+  border: 2px solid #5a3ea1; /* highlight current */
+  transform: scale(1.1);
+}
+
+.dash-btn:hover {
+  filter: brightness(1.05);
+}
